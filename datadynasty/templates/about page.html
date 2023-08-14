@@ -1,0 +1,65 @@
+{% extends "layout.html" %} {% block title %}{% endblock %}{% block body %}
+    <div class="about-page">
+      <img class="top-green-icon1" alt=""  src="{{ url_for('static', filename='images/top green.png') }}" />
+
+      <div class="agro-data-dynasty-container1">
+        <p class="agro-data1">AGRO DATA</p>
+        <p class="agro-data1">DYNASTY</p>
+      </div>
+      <img class="logo-icon1" alt=""  src="{{ url_for('static', filename='images/logo.png') }}" />
+
+      <div class="home2" id="hOMEText"><a style="color: black;" href="{{ url_for('index')}}">HOME</a></div>
+      <div class="about2">ABOUT</div>
+      <div class="story2" id="sTORYText">STORY</div>
+      <div class="contact2" id="cONTACTText">CONTACT</div>
+      <div class="get-started">
+    		<div class="get-started1">
+      			<span class="get-started-txt-container">
+        				<span>  </span>
+        				<span class="get-started2">GET STARTED</span>
+      			</span>
+    		</div>
+  	</div>
+      <div class="bar-charts-compare-container1">
+        <span class="get-started-txt-container1">
+          <p class="agro-data1">
+            Bar Charts: Compare categories, e.g., yields in regions.
+          </p>
+          <p class="agro-data1">&nbsp;</p>
+          <p class="agro-data1">Line Charts: Show trends over time.</p>
+          <p class="agro-data1">&nbsp;</p>
+          <p class="agro-data1">Area Charts: Visualize cumulative data.</p>
+          <p class="agro-data1">&nbsp;</p>
+          <p class="agro-data1">
+            Pie Charts: Represent composition or distribution.
+          </p>
+          <p class="agro-data1">&nbsp;</p>
+          <p class="agro-data1">Bubble Charts: Compare three data dimensions.</p>
+          <p class="agro-data1">&nbsp;</p>
+          <p class="agro-data1">Heat Maps: Highlight regional variations.</p>
+          <p class="agro-data1">&nbsp;</p>
+          <p class="agro-data1">Geographic Maps: Plot data on a map.</p>
+          <p class="agro-data1">&nbsp;</p>
+          <p class="agro-data1">
+            Stacked Charts: Compare contributions to total.
+          </p>
+          <p class="agro-data1">&nbsp;</p>
+          <p class="agro-data1">Treemaps: Visualize hierarchical data.</p>
+          <p class="agro-data1">&nbsp;</p>
+          <p class="agro-data1">Radar Charts: Compare crop performance.</p>
+        </span>
+      </div>
+      <div class="dashboard2" id="dASHBOARDText">DASHBOARD</div>
+      <img
+        class="visualagri1"
+        alt=""
+        src="{{ url_for('static', filename='images/vis.gif') }}"
+      />
+    </div>
+
+    
+<script src="{{ url_for('static', filename='js/about.js') }}"></script>
+      
+  </body>
+</html>
+{% endblock %}

@@ -1,0 +1,126 @@
+{% extends "layout.html" %} {% block title %}HOME{% endblock %}{% block body %}
+    <div class="intro-page">
+      <img class="handplant-icon" alt="" src="{{ url_for('static', filename='images/handplant.png') }}"/>
+
+      <div
+        class="indian-agriculture-challenges-container"
+        data-scroll-to="indianAgricultureChallenges"
+      >
+        <p class="indian-agriculture-challenges">
+          Indian Agriculture Challenges
+        </p>
+      </div>
+      <i class="unlock-the-potential-container">
+        <p class="indian-agriculture-challenges">
+          Unlock the potential of Indian agriculture with data-driven insights
+          and smart solutions."
+        </p>
+        <p class="indian-agriculture-challenges">&nbsp;</p>
+        <p class="indian-agriculture-challenges">
+          "Discover the power of precision farming and boost your crop yields
+          with advanced data analytics."
+        </p>
+        <p class="indian-agriculture-challenges">&nbsp;</p>
+        <p class="indian-agriculture-challenges">
+          "Stay ahead in the market with real-time agricultural data analysis
+          and informed decision-making."
+        </p>
+        <p class="indian-agriculture-challenges">&nbsp;</p>
+        <p class="indian-agriculture-challenges">
+          "Empowering farmers and policymakers through data-driven strategies
+          for a sustainable future.
+        </p>
+      </i>
+      <img
+        class="top-green-icon"
+        alt=""
+        src="{{ url_for('static', filename='images/top green.png') }}" alt="Image">
+
+      <img
+        class="logo"
+        alt=""
+        src="{{ url_for('static', filename='images/logo.png') }}" alt="Image">
+      
+
+      <div class="agro-data-dynasty-container">
+        <p class="indian-agriculture-challenges">AGRO DATA</p>
+        <p class="indian-agriculture-challenges">DYNASTY</p>
+      </div>
+      <div class="home" id="hOMEText">HOME</div>
+      <div class="about" id="aBOUTText"> <a style="color: black;" href="{{url_for('about')}}">ABOUT</a></div>
+      <div class="dashboard" id="dASHBOARDText"><a style="color: black;" href="{{url_for('dashboard')}}">DASHBOARD</a></div>
+      <div class="story" id="sTORYText">STORY</div>
+      <div class="contact" id="cONTACTText"><a style="color: black;" href="{{url_for('contact')}}">CONTACT</a></div>
+      <div class="get-started" id="getStartedContainer">
+        <div class="get-started1">
+          <span class="get-started-txt-container">
+            <span> </span>
+            <span class="get-started2">GET STARTED</span>
+          </span>
+        </div>
+      </div>
+      <img
+        class="team-green-border"
+        alt=""
+        src="{{ url_for('static', filename='images/team green border.png') }}"
+      />
+
+      <div class="team-members">TEAM MEMBERS</div>
+      <div class="jenson-k-cletus-container">
+        <span class="get-started-txt-container">
+          <p class="indian-agriculture-challenges">JENSON K</p>
+          <p class="indian-agriculture-challenges">CLETUS SYLPHIA P</p>
+          <p class="indian-agriculture-challenges">MEENAKRISHNA B</p>
+          <p class="indian-agriculture-challenges">Phone: +91 90430 35879</p>
+          <p class="indian-agriculture-challenges">
+            Email: jensonk22ad@psnacet.edu.in
+          </p>
+        </span>
+      </div>
+      <div class="twitter"></div>
+      <div class="gmail"></div>
+      <div class="insta"></div>
+      <div class="linkedin"></div>
+      <div class="facebook"></div>
+      <div class="useful-links">Useful Links</div>
+      <div class="home1">
+        <span class="get-started-txt-container">
+          <p class="indian-agriculture-challenges"><a style="color: black;"href="{{url_for('index')}}">&gt;Home</a></p>
+        </span>
+      </div>
+      <div class="contact1" id="contactText">
+        <span class="get-started-txt-container">
+          <p class="indian-agriculture-challenges"><a style="color: black;" href="{{url_for('contact')}}">&gt;Contact</a></p>
+        </span>
+      </div>
+      <div class="about1" id="aboutText"><a style="color: black;" href="{{url_for('about')}}">&gt;About</a></div>
+      <div class="dashboard1" id="dashBoardText">&gt;DashBoard</div>
+      <div class="story1" id="storyText">&gt;Story</div>
+      <img class="front-image-icon" alt=""  src="{{ url_for('static', filename='images/10178.gif') }}">
+      
+
+      <div class="thankyou"></div>
+      <div class="thank-you">Thank you!</div>
+      <div class="copyrights">@Copyrights</div>
+      <div class="smartbridge">SmartBridge</div>
+      <div class="all-rights-reserved">All Rights Reserved</div>
+      <div class="designed-by-team">Designed by Team</div>
+      <div class="data-dynasty">DATA DYNASTY</div>
+      <img class="twitter-icon" alt="" src="{{ url_for('static', filename='images/twitter.png') }}">
+    		
+    		<img class="facebook-icon" alt="" src="{{ url_for('static', filename='images/facebook.png') }}">
+    		
+    		<img class="linkedin-icon" alt="" src="{{ url_for('static', filename='images/linkedin.jpg') }}">
+    		
+    		<img class="instagram-icon" alt="" src="{{ url_for('static', filename='images/insta.jpg') }}">
+    		
+    		<img class="gmail-icon" alt="" src="{{ url_for('static', filename='images/gmail.jpg') }}">
+        <div class="img-write">
+          “Agriculture Data Analysis in India isn't just numbers; it's the story
+          of ______________growth, innovation, and sustainable farming___________
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    {% endblock %}
