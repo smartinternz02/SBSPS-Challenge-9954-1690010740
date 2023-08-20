@@ -87,10 +87,10 @@
 .contact,
 .story {
   left: 1037px;
-  width: 93px;
+  width: 150px;
 }
 .contact {
-  left: 1140px;
+  left: 1200px;
   width: 95px;
 }
 .get-started2:hover {
@@ -344,103 +344,33 @@
   width: 1100px;
   height: 190px;
 }
-.top-green-icon1 {
-  position: absolute;
-  top: calc(50% - 511px);
-  left: 0;
-  width: 1530px;
-  height: 93px;
+.agro-data1{
+  margin: 0;
 }
-.logo-icon1 {
+.logo-ABOUT{
   position: absolute;
-  top: 30px;
-  left: 31px;
+  top: 17px;
+  left: 17px;
   width: 46px;
   height: 44px;
   object-fit: cover;
 }
-.agro-data1 {
+
+.agro-data-about {
   margin: 0;
 }
 .agro-data-dynasty-container1 {
   position: absolute;
-  top: 28px;
-  left: 90px;
+  top: 17px;
+  left: 70px;
   font-size: var(--font-size-xl);
   font-weight: 600;
   display: inline-block;
   width: 130px;
   height: 45px;
 }
-.about2,
-.contact2,
-.home2,
-.story2 {
-  position: absolute;
-  top: 28px;
-  font-weight: 600;
-  display: inline-block;
-}
-.home2 {
-  left: 690px;
-  width: 52px;
-  height: 26px;
-  cursor: pointer;
-}
-.about2,
-.contact2,
-.story2 {
-  left: 806px;
-  width: 65px;
-  height: 19px;
-}
-.contact2,
-.story2 {
-  left: 1093px;
-  width: 90px;
-  height: 22px;
-  cursor: pointer;
-}
-.contact2 {
-  left: 1197px;
-  width: 95px;
-  height: 10px;
-}
 
-.get-started20 {
-  color: var(--color-black);
-}
-.get-started-txt-container0 {
-  line-break: anywhere;
-  width: 100%;
-}
-.get-started10 {
-  position: absolute;
-  height: 88.89%;
-  width: 96.89%;
-  top: 0;
-  left: 0;
-  font-weight: 900;
-  display: flex;
-  align-items: center;
-}
-.get-started0 {
-  position: absolute;
-  top: calc(50% - 494.5px);
-  left: calc(50% + 573.5px);
-  background: linear-gradient(
-    180deg,
-    rgba(134, 230, 89, 0) 46.88%,
-    #5ceb19 55.21%
-  );
-  border: 5px solid var(--color-white);
-  box-sizing: border-box;
-  width: 161px;
-  height: 45px;
-  overflow: auto;
-  font-size: var(--font-size-xl);
-  color: var(--color-white);
-}
+
 .dashboard2 {
   position: absolute;
   top: 28px;
@@ -478,7 +408,7 @@
   position: relative;
   background-color: var(--color-white);
   width: 100%;
-  height: 1024px;
+  height: 800px;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-base);
