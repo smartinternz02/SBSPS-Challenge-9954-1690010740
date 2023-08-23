@@ -9,11 +9,11 @@
       </div>
       <img class="logo-icon-con" alt="" src="{{ url_for('static', filename='images/logo.png') }}" />
 
-      <div class="home" id="hOMEText">HOME</div>
-      <div class="about" id="aBOUTText">ABOUT</div>
-      <div class="dashboard" id="dASHBOARDText">DASHBOARD</div>
-      <div class="story">STORY-REPORT</div>
-      <div class="contact">CONTACT</div>
+      <div class="home" id="hOMEText"><a style="color: black;" href="{{ url_for('index')}}">HOME</a></div>
+      <div class="about" id="aBOUTText"><a style="color: black;" href="{{ url_for('about')}}">ABOUT</a></div>
+      <div class="dashboard" id="dASHBOARDText"><a style="color: black;" href="{{url_for('dashboard')}}">DASHBOARD</a></div>
+      <div class="story"><a style="color: black;" href="{{url_for('story')}}">STORY-REPORT</a></div> 
+      <div class="contact"><a style="color: black;" href="{{url_for('contact')}}">CONTACT</a></div>
      
       </div>
       <img class="hahw-1-icon" alt="" src="{{ url_for('static', filename='images/HAhw.gif') }}" />

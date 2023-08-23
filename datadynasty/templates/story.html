@@ -1,99 +1,95 @@
-<!DOCTYPE html>
-<html>
-<head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="initial-scale=1, width=device-width">
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800;900&display=swap" />
-	  <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}"/>
-	  <link rel="stylesheet" href="{{ url_for('static', filename='css/index4.css') }}"/>
-  	
-  	
-  	
-</head>
-<body>
-  	
+{% extends "layout.html" %} {% block title %}{% endblock %}{% block body %}  	
   	<div class="story-page">
-    		<div class="story">STORY</div>
-    		<div class="div">____________</div>
-    		<div class="check-our-story">CHECK OUR STORY</div>
-    		<div class="story-using-different">Story Using Different Types of Visualizations</div>
-    		<div class="story-page-child" data-scroll-to="rectangle">
+    		<div class="story-color">
     		</div>
-    		<div class="story-page-item">
-    		</div>
-    		<div class="story-page-inner">
-    		</div>
-    		<div class="rectangle-div"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.my_folders%2FChemical%2BStory&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;sceneId=-1&amp;sceneTime=0" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
-    		</div>
-    		<img class="top-green-icon" alt="" src="top green.svg">
+    		<img class="top-green-icon-story" alt="" src="{{ url_for('static', filename='images/top green.png') }}">
     		
-    		<img class="whatsapp-image-2023-07-31-at-8" alt="" src="WhatsApp Image 2023-07-31 at 8.32 4.png">
-    		
-    		<div class="agro-data-dynasty-container">
-      			<p class="agro-data">AGRO DATA</p>
-      			<p class="agro-data"> DYNASTY</p>
+    		<div class="tash">____________</div>
+    		<div class="check-our">CHECK OUR STORY</div>
+    		<div class="story-2nd-line">Story Using Different Types of Visualizations</div>
+    		<div class="crop-story"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.my_folders%2FCrops%2BStory&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
     		</div>
+    		<div class="production-story"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.my_folders%2FProduction%2BStory&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+    		</div>
+    		<div class="chemical-story"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.my_folders%2FChemical%2BStory&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+    		</div>
+    		<div class="population-story"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.my_folders%2FPopulation%2BStory&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></div>
+    		
+    		<div class="climate-story"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.my_folders%2FClimate%2BStory&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+    		</div>
+    		<div class="crops-story"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=story&amp;pathRef=.my_folders%2FAll%2BCrops%2BStory&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;sceneId=-1&amp;sceneTime=0" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>	</div>
+    		<img class="logo" alt="" src="{{ url_for('static', filename='images/logo.png') }}">
+    		
+			<div class="agro-data-dynasty-container-con">
+				<p class="agro-data-con">AGRO DATA</p>
+				<p class="agro-data-con">DYNASTY</p>
+			  </div>
     		<div class="home" id="hOMEText">HOME</div>
     		<div class="about" id="aBOUTText">ABOUT</div>
     		<div class="dashboard" id="dASHBOARDText">DASHBOARD</div>
-    		<div class="story1" id="sTORYText1">STORY</div>
+    		<div class="story">STORY-REPORT</div>
     		<div class="contact" id="cONTACTText">CONTACT</div>
-    		<div class="get-started" id="getStartedContainer">
-      			<div class="get-started1">
-        				<span class="get-started-txt-container">
-          					<span>  </span>
-          					<span class="get-started2">GET STARTED</span>
-        				</span>
-      			</div>
+    		
+    		<img class="storygif-icon" alt="" src="{{ url_for('static', filename='images/story.gif') }}">
+    		
+    		<div class="allcrops-story-headbox" data-scroll-to="allcropsStoryHeadbox">
+    		</div>
+    		<div class="climate-story-headbox" data-scroll-to="climateStoryHeadbox">
+    		</div>
+    		<div class="chemical-story-headbox" data-scroll-to="chemicalStoryHeadbox">
+    		</div>
+    		<div class="overall-story-headbox" data-scroll-to="overallStoryHeadbox">
+    		</div>
+    		<div class="production-story-headbox" data-scroll-to="productionStoryHeadbox">
+    		</div>
+    		<div class="population-story-headbox" data-scroll-to="populationStoryHeadbox">
+    		</div>
+    		<div class="crop-story-headbox-icon" data-scroll-to="cropStoryHeadbox"></div>  
+    		
+    		<div class="all-crops-story" data-scroll-to="aLLCROPSSTORY">ALL CROPS STORY</div>
+    		<div class="chemical-story1">CHEMICAL STORY</div>
+    		<div class="overall-report">OVERALL REPORT</div>
+    		<div class="production-story1">PRODUCTION STORY</div>
+    		<div class="population-story1">POPULATION STORY</div>
+    		<div class="crops-story1">CROPS STORY</div>
+    		<div class="climate-story1">CLIMATE STORY</div>
+    		<div class="story1st">STORY</div>
+    		<div class="overall-report-story"><iframe src="https://us3.ca.analytics.ibm.com/bi/?pathRef=.my_folders%2FOverall%2Breport&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded" width="1250" height="750" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+    		</div>
+    		<div class="allcrops-story-topbox" id="allcropsStoryTopbox">
+    		</div>
+    		<div class="overall-report-topbox" id="overallReportTopbox">
+    		</div>
+    		<div class="chemical-story-topbox" id="chemicalStoryTopbox">
+    		</div>
+    		<div class="production-story-topbox" id="productionStoryTopbox">
+    		</div>
+    		<div class="population-story-topbox" id="populationStoryTopbox">
+    		</div>
+    		<div class="crops-story-topbox" id="cropsStoryTopbox">
+    		</div>
+    		<div class="climate-story-topbox" id="climateStoryTopbox">
+    		</div>
+    		<div class="allcrops-storytop" id="allcropsStorytopText">
+      			<span class="get-started-txt-container">
+        				<p class="agro-data">ALL CROPS </p>
+      			</span>
+    		</div>
+    		<div class="overall-storytop" id="overallStorytopText">OVERALL-REPORT</div>
+    		<div class="chemical-storytop" id="chemicalStorytopText">CHEMICAL </div>
+    		<div class="production-storytop" id="productionStorytopText">PRODUCTION </div>
+    		<div class="crops-storytop" id="cropsStorytopText">CROPS </div>
+    		<div class="population-storytop" id="populationStorytopText">POPULATION </div>
+    		<div class="climate-storytop" id="climateStorytopText">
+      			<span class="get-started-txt-container">
+        				<p class="agro-data">CLIMATE</p>
+      			</span>
     		</div>
   	</div>
+	  <script src="{{ url_for('static', filename='js/story.js') }}"></script>
+  	{% endblock %}
   	
   	
   	
   	
-  	<script>
-    		var hOMEText = document.getElementById("hOMEText");
-    		if(hOMEText) {
-      			hOMEText.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var aBOUTText = document.getElementById("aBOUTText");
-    		if(aBOUTText) {
-      			aBOUTText.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var dASHBOARDText = document.getElementById("dASHBOARDText");
-    		if(dASHBOARDText) {
-      			dASHBOARDText.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var sTORYText1 = document.getElementById("sTORYText1");
-    		if(sTORYText1) {
-      			sTORYText1.addEventListener("click", function (e) {
-        				window.location.href = "/"
-      			});
-    		}
-    		
-    		var cONTACTText = document.getElementById("cONTACTText");
-    		if(cONTACTText) {
-      			cONTACTText.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var getStartedContainer = document.getElementById("getStartedContainer");
-    		if(getStartedContainer) {
-      			getStartedContainer.addEventListener("click", function () {
-        				var anchor = document.querySelector("[data-scroll-to='rectangle']");
-        				if(anchor) {
-          					anchor.scrollIntoView({"block":"start","behavior":"smooth"}) }
-      			});
-    		}
-  	</script></body>
-</html>
+ 

@@ -1,89 +1,186 @@
-<!DOCTYPE html>
-<html>
-<head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="initial-scale=1, width=device-width">
-	  <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}"/>
-	  <link rel="stylesheet" href="{{ url_for('static', filename='css/index4.css') }}"/>
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,600;0,700;0,800;0,900;1,400&display=swap" />
-  	
-  	
-  	
-</head>
+{% extends "layout.html" %} {% block title %}{% endblock %}{% block body %}
 <body>
-  	
-  	<div class="dashboard-page">
-    		<div class="dashboard">DASHBOARD</div>
-    		<div class="div">______________</div>
-    		<div class="check-our-dashboard">CHECK OUR DASHBOARD USING IBM Cognos</div>
-    		<b class="dashboard-of-different">DashBoard of Different Type of Visualizations Using Agriculture  Data Set</b>
-    		<img class="top-green-icon" alt="" src="top green.svg">
-    		
-    		<div class="get-started">
-      			<div class="get-started1">
-        				<span class="get-started-txt-container">
-          					<span>  </span>
-          					<span class="get-started2">GET STARTED</span>
-        				</span>
-      			</div>
-    		</div>
-    		<div class="dash-4">
-    		</div>
-    		<div class="rectangle-parent">
-      			<div class="frame-child">
-      			</div>
-      			<img class="dash-2-icon" alt="" src="dash 2.svg">
-      			
-      			<i class="by-conducting-a">By conducting a thorough population analysis in agriculture data, you can gain insights into the complex interactions between population dynamics, agricultural practices, food security, and rural development. These insights can inform policies, investments, and strategies to ensure sustainable and resilient agricultural systems that meet the needs of a growing population.</i>
-    		</div>
-    		<div class="production-parent">
-      			<i class="production">Production </i>
-      			<img class="frame-item" alt="" src="Polygon 1.svg">
+<div class="dashboard-page">
+  <div data-scroll-to='topGreen'><img class="top-green-icon-dash" alt="" src="{{url_for('static',filename='images/top green.png')}}"></div>
+  
+  <img class="plantboxgif-icon" alt="" src="{{url_for('static',filename='images/plantbox.gif')}}">
+  
+  <div class="exploration-topbox" id="explorationTopbox">
+  </div>
+  <div class="exploration-top" id="explorationTopText">exploration</div>
+  <div class="dashboard-zero">DASHBOARD</div>
+  <div class="dashboard-">______________</div>
+  <div class="dashboardpage-first">CHECK OUR DASHBOARD USING IBM Cognos</div>
+  <b class="dashboardpage-second">DashBoard of Different Type of Visualizations Using Agriculture  Data Set</b>
+  <div class="get-started" id="getStartedContainer">
+    <div class="get-started1">
+      <span class="get-started-txt-container">
+        <span> </span>
+        <span class="get-started2">GET STARTED</span>
+      </span>
+    </div>
+  </div>
+  <div class="home" id="hOMEText" style="color: black;">HOME</div>
+  <div class="about" id="aBOUTText"><a style="color: black;" href="{{ url_for('about')}}">ABOUT</a></div>
+  <div class="dashboard"><a style="color: black;" href="{{ url_for('dashboard')}}">DASHBOARD</a></div>
+  <div class="story" id="sTORYText"><a style="color: black;" href="{{url_for('story')}}">STORY-REPORT</a></div>
+  <div class="contact" id="cONTACTText"><a style="color: black;" href="{{url_for('contact')}}">CONTACT</a></div>
+  <div class="agro-data-dynasty-container-dash">
+      <p class="agro-data-dash">AGRO DATA</p>
+      <p class="agro-data-dash"> DYNASTY</p>
+  </div>
+  <img class="logo" alt="" src="{{url_for('static',filename='images/logo.png')}}">
+  
+  <div class="ellipse-right">
+  </div>
+  <div class="ellipse-left">
+  </div>
+  <div class="ph-topbox" id="phTopbox">
+  </div>
+  <div class="currentstate-topbox" id="currentstateTopbox">
+  </div>
+  <div class="foodsecurity-topbox" id="foodsecurityTopbox">
+  </div>
+  <div class="rainfall-topbox" id="rainfallTopbox">
+  </div>
+  <div class="cropdamage-topbox" id="cropdamageTopbox">
+  </div>
+  <div class="chemical-topbox" id="chemicalTopbox">
+  </div>
+  <div class="overall-topbox" id="overallTopbox">
+  </div>
+  <div class="variable-topbox" id="variableTopbox">
+  </div>
+  <div class="production-topbox" id="productionTopbox">
+  </div>
+  <div class="crop-topbox" id="cropTopbox">
+  </div>
+  <div class="population-topbox" id="populationTopbox">
+  </div>
+  <div class="production-top">Production</div>
+  <div class="rainfall-top" id="rainfallTopText">Rainfall</div>
+  <div class="population-top" id="populationTopText">
+      <span class="get-started-txt-container">
+          <p class="agro-data">Population</p>
+      </span>
+  </div>
+  <div class="overall-top" id="overallTopText">overall</div>
+  <div class="variable-top" id="variableTopText">Variable with Crop and state </div>
+  <div class="cropdamage-top">Crop Damage</div>
+  <div class="ph-top" id="phTopText">PH and other Factor</div>
+  <div class="currentstate-top" id="currentstateTopText">Current State of Agriculture</div>
+  <div class="food-security-top">Food  Security</div>
+  <div class="crop-top" id="cropTopText">Crop</div>
+  <div class="chemical-top" id="chemicalTopText">Chemical</div>
+  <div class="combine-color">
+  </div>
+  <div class="population-box">
+  </div>
+  <div class="population-dash"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FFinal%2BPopulation%2BDashboard&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+  </div>
+  <i class="population-con">India boasts a diverse and sizable population of over 1.3 billion, comprising a youthful demographic that presents both opportunities and challenges. The ongoing urbanization trend is reshaping its landscape, while government initiatives address family planning and healthcare. This rich blend of cultures and languages underpins India's vibrant societal fabric and influences its global trajectory.</i>
+  <div class="population-headbox" >
+  </div>
+  <div class="population-head" data-scroll-to="populationHeadText">ACCORDING TO POPULATION IN INDIA</div>
+  <div class="food-security-headbox" data-scroll-to="foodSecurityHeadbox">
+  </div>
+  <div class="food-security-head">FOOD SECURITY IN INDIA</div>
+  <div class="food-security-dash"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FFood%2BSecurity%2BDashboard&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+  </div>
+  <div class="food-security-box">
+  </div>
+  <i class="food-security-box1">Food security is a critical issue in India, given its large population. Agriculture plays a crucial role in ensuring food security by producing essential crops. However, challenges such as uneven distribution of resources, post-harvest losses, and climate change can affect food availability. The government has implemented various policies and programs to improve agricultural productivity, storage facilities, and distribution networks to enhance food security for the population.</i>
+  <div class="current-state-headbox" data-scroll-to="currentStateHeadbox">
+  </div>
+  <div class="current-state-head" data-scroll-to="currentStateHeadText">CURRENT STATE OF AGRICULTURE</div>
+  <div class="current-state-dash"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FFinal%2BCurrent%2BState%2BOf%2BAgriculture&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+  </div>
+  <div class="current-state-box">
+  </div>
+  <i class="current-state-con">Indian agriculture is a major contributor to the economy, producing significant quantities of crops like rice, wheat, sugarcane, and cotton. Challenges include small land holdings, outdated techniques, water management issues, post-harvest losses, limited market access, and climate change impacts. Efforts are being made to improve irrigation, crop insurance, market access, and technology adoption to address these challenges and enhance the agricultural sector's overall state. For the latest information, refer to recent government reports and agricultural news sources.</i>
+  <div class="production-headbox" data-scroll-to="populationHeadbox">
+  </div>
+  <div class="production-head">PRODUCTION IN AGRICULTURE</div>
+  <div class="production-dash-icon" ><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FFinal%2BProduction%2BDashboard-1&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></div>
+  
+  <div class="production-box">
+  </div>
+  <i class="production-con">Agricultural production in India is a significant contributor to the country's economy. It encompasses a wide range of crops, including rice, wheat, sugarcane, cotton, and more. However, India's agriculture faces challenges such as fluctuating weather patterns, land degradation, and issues related to irrigation and distribution. The government has implemented various policies and initiatives to support farmers and improve productivity. If you need specific information, feel free to ask!</i>
+  <div class="crop-production-headbox" data-scroll-to="cropProductionHeadbox"></div>
+  <div class="crop-production-dash" ><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FFinal%2BCrop%2BDashboard&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></div>
+  
+  <div class="crop-production-head" data-scroll-to="cropProductionHeadText">CROP PRODUCTION IN INDIA</div>
+  <div class="crop-production-box">
+  </div>
+  <i class="crop-production-con">India is one of the world's largest producers of various crops. Some major crops produced in India include rice, wheat, sugarcane, cotton, oilseeds, pulses, and fruits like mangoes and bananas. These crops vary in terms of their regional cultivation and importance. For instance, rice is a staple in the southern and eastern parts of the country, while wheat is a significant crop in the northern regions. The agricultural sector plays a crucial role in India's economy, providing livelihoods to a substantial portion of the population.</i>
+  <div class="chemical-headbox" data-scroll-to="chemicalHeadbox">
+  </div>
+  <div class="chemical-head" data-scroll-to="chemicalHeadText">CHEMICAL USED IN AGRICULTURE</div>
+  <div class="chemical-dash"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FFinal%2BChemical%2BDashboard&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+  </div>
+  <div class="chemical-box">
+  </div>
+  <i class="chemical-con">
+      <span class="get-started-txt-container">
+          <p class="agro-data">1. Benefits and Risks: Agricultural chemicals can enhance crop yield and quality, contributing to food <br>security. However, improper use  <br>           lead to soil and water pollution,<br> harm beneficial organisms, and <br>raise concerns about chemical <br> residues in food.</p>
+          <p class="agro-data">2. Sustainable Practices: To <br> mitigate risks, sustainable farming practices like integrated pest <br>management (IPM) and organic <br> farming aim to minimize chemical use. These approaches promote <br>ecological balance, reduce <br> environmental impact, and ensure <br>long-term agricultural viability.</p>
+      </span>
+  </i>
+  <div class="variable-dash"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FFinal%2BVariables%2BWith%2BCrop%2BAnd%2BState&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+  </div>
+  <div class="varaiable-headbox" data-scroll-to="varaiableHeadbox">
+  </div>
+  <div class="variable-head" data-scroll-to="variableHeadText">VARIABLES WITH CROP AND STATE</div>
+  <div class="variable-box">
+  </div>
+  <i class="variable-con">In the context of Indian agriculture, the term "variable with crop and state" might refer to the diversity of crops grown in different states of India. Each state has its own unique agricultural practices and preferred crops based on factors like climate, soil type, and water availability. This variability is essential for sustaining the nation's food production and ensuring a balanced agricultural system. If you need more specific information about a particular crop or state, feel free to ask!</i>
+  <div class="crop-damage-headbox" data-scroll-to="cropDamageHeadbox">
+  </div>
+  <div class="crop-damage-head">CROP DAMAGE IN AGRICULTURE</div>
+  <div class="crop-damage-dash"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FFinal%2BCrop%2BDamage%2BDashboard&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+  </div>
+  <div class="crop-damage-box">
+  </div>
+  <i class="crop-damage-con">Crop damage in Indian agriculture stems from pests, diseases, extreme weather, natural disasters, soil degradation, water scarcity, market shifts, pesticide misuse, and human-wildlife conflicts. Solutions involve resilient crops, better management practices, integrated pest control, and disaster readiness.</i>
+  <div class="rainfall-headbox" data-scroll-to="rainfallHeadbox">
+  </div>
+  <div class="rainfall-head" data-scroll-to="rainfallHeadText">RAINFALL  IN INDIA</div>
+  <div class="rainfall-dash"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FFinal%2BRainfall%2BDashboard&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+  </div>
+  <div class="rainfall-box">
+  </div>
+  <i class="rainfall-con">Rainfall variation in India influences crop choices and state suitability. Rice thrives in regions like the northeast, wheat in drier northern plains, cotton in states like Gujarat, and tea in areas with heavy rainfall like Assam. States like Punjab rely on irrigation due to lower rainfall, while Kerala's high rainfall benefits crops like rubber and coconuts.</i>
+  <div class="ph-box" data-scroll-to="phBox">
+  </div>
+  <div class="ph-head" data-scroll-to="phHeadText">PH AND OTHER FACTORS</div>
+  <div class="ph-dash"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FFinal%2BPH%2BAnd%2BOther%2BFactors%2BDashboard&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+  </div>
+  <div class="ph-box1">
+  </div>
+  <i class="ph-con">pH is crucial in agriculture. It affects nutrient availability, soil structure, and water movement. Correct pH (6-7) aids most crops, but some prefer specific levels (acid-loving plants, blueberries). pH impacts diseases, salinity, and aluminum toxicity. Water quality matters, and testing guides pH management.</i>
+  <div class="overall-headbox" data-scroll-to="overallHeadbox">
+  </div>
+  <div class="overall-box">
+  </div>
+  <i class="overall-con">India has a diverse agricultural sector that contributes significantly to its economy. It's a major producer of various crops like rice, wheat, sugarcane, cotton, and fruits. However, the sector faces challenges such as outdated farming practices, inadequate infrastructure, and climate change impacts. Efforts are being made to modernize and improve agricultural techniques, promote sustainable practices, and enhance rural livelihoods.</i>
+  <div class="overall-head" data-scroll-to="overallHeadText">OVERALL  IN AGRICULTURE IN INDIA</div>
+  <div class="overall-dash-icon"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FFinal%2BOverall%2BDashboard&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe></div> 
+  
+  <div class="exploration-headbox" data-scroll-to="explorationHeadbox">
+  </div>
+  <div class="exploration-box">
+  </div>
+  <div class="exploration-head" data-scroll-to="eXPLORATIONHeadText">EXPLORATION</div>
+  <div class="exploration-dash"><iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=explore&amp;pathRef=.my_folders%2FFinal%2BExploration&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded" width="1000" height="650" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+  </div>
+  <i class="exploration-con">IBM Cognos Exploration is a component of the IBM Cognos Analytics suite that allows users to visually explore and analyze data to gain insights. It provides a user-friendly interface for creating interactive visualizations and conducting ad-hoc data analysis.</i>
+  <div class="arrow-hotspot-1-icon" id="arrowHotspot1Image">
+    <i>&#9650;</i>
+</div>
+</div>
 
-      			
-    		</div>
-    		<img class="logo-dashboard-icon" alt="" src="logo-dashboard.png">
-    		
-    		<div class="contact" id="cONTACTText"><a href="{{url_for('contact')}}">CONGTACT</a></div>
-    		<div class="story" id="sTORYText">STORY</div>
-    		<div class="dashboard1">DASHBOARD</div>
-    		<div class="about" id="aBOUTText">ABOUT</div>
-    		<div class="home" id="hOMEText">HOME</div>
-    		<div class="agro-data-dynasty-container">
-      			<p class="agro-data">AGRO DATA</p>
-      			<p class="agro-data"> DYNASTY</p>
-    		</div>
-  	</div>
-  	
-  	
-  	
-  	
-  	<script>
-    		var cONTACTText = document.getElementById("cONTACTText");
-    		if(cONTACTText) {
-      			cONTACTText.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var sTORYText = document.getElementById("sTORYText");
-    		if(sTORYText) {
-      			sTORYText.addEventListener("click", function (e) {
-        			
-      			});
-    		}
-    		
-    		var aBOUTText = document.getElementById("aBOUTText");
-    		if(aBOUTText) {
-      			aBOUTText.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var hOMEText = document.getElementById("hOMEText");
-    		if(hOMEText) {
-      			hOMEText.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}</script></body>
-</html>
+
+	<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+  </body>
+
+{% endblock %}

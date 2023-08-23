@@ -10,8 +10,8 @@
 
       <div class="home" id="hOMEText"><a style="color: black;" href="{{ url_for('index')}}">HOME</a></div>
       <div class="about">ABOUT</div>
-      <div class="story" id="sTORYText">STORY-REPORT</div>
-      <div class="contact" id="cONTACTText">CONTACT</div>
+      <div class="story" id="sTORYText"><a style="color: black;" href="{{url_for('story')}}">STORY-REPORT</a></div>
+      <div class="contact" id="cONTACTText"><a style="color: black;" href="{{url_for('contact')}}">CONTACT</a></div>
       <div class="get-started">
     		<div class="get-started1">
       			<span class="get-started-txt-container">
@@ -49,7 +49,7 @@
           <p class="agro-data1">Radar Charts: Compare crop performance.</p>
         </span>
       </div>
-      <div class="dashboard" id="dASHBOARDText">DASHBOARD</div>
+      <div class="dashboard" id="dASHBOARDText"><a style="color: black;" href="{{url_for('dashboard')}}">DASHBOARD</a></div>
       <img
         class="visualagri1"
         alt=""
@@ -61,5 +61,5 @@
 <script src="{{ url_for('static', filename='js/about.js') }}"></script>
       
   </body>
-</html>
+
 {% endblock %}
