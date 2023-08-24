@@ -175,3 +175,12 @@
           					anchor.scrollIntoView({"block":"start","behavior":"smooth"}) }
       			});
     		}
+			var arrowHotspotstoryImage = document.getElementById("arrowHotspotstoryImage");
+			if (arrowHotspotstoryImage) {
+ 				arrowHotspotstoryImage.addEventListener("click", function () {
+    				var anchor = document.querySelector("[data-scroll-to='topGreen-story']");
+    				if (anchor) {
+      					anchor.scrollIntoView({ block: "start", behavior: "smooth" }); }
+
+  				});
+			}

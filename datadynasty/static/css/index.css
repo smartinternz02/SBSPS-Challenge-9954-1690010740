@@ -1928,7 +1928,7 @@
 }
 .allcrops-storytop {
   position: absolute;
-  top: calc(50% - 3307.5px);
+  top: calc(50% - 3320px);
   left: calc(50% - 684px);
   display: flex;
   align-items: center;
@@ -2013,5 +2013,31 @@
   left: calc(50% - 765px);
   width: 1530px;
   height: 74px;
+}
+.arrow-hotspot-story-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 6px;
+  width: 40px;
+  height: 40px;
+  background-color: #00d5ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgb(0, 0, 0);
+  z-index: 1000;
+
+}
+.allcrops-storytop:hover,
+.production-storytop:hover,
+.climate-storytop:hover,
+.chemical-storytop:hover,
+.overall-storytop:hover,
+.crops-storytop:hover,
+.population-storytop:hover{
+  color: white;
+
 }
 
