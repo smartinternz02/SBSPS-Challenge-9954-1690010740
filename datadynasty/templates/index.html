@@ -49,7 +49,7 @@
       <div class="home" id="hOMEText">HOME</div>
       <div class="about" id="aBOUTText"> <a style="color: black;" href="{{url_for('about')}}">ABOUT</a></div>
       <div class="dashboard" id="dASHBOARDText"><a style="color: black;" href="{{url_for('dashboard')}}">DASHBOARD</a></div>
-      <div class="story" id="sTORYText">STORY-REPORT</div>
+      <div class="story" id="sTORYText"><a style="color: black;" href="{{url_for('story')}}">STORY-REPORT</a></div>
       <div class="contact" id="cONTACTText"><a style="color: black;" href="{{url_for('contact')}}">CONTACT</a></div>
       <div class="get-started" id="getStartedContainer">
         <div class="get-started1">
@@ -90,8 +90,8 @@
         </span>
       </div>
       <div class="about1" id="aboutText"><a style="color: black;" href="{{url_for('about')}}">&gt;About</a></div>
-      <div class="dashboard1" id="dashBoardText">&gt;DashBoard</div>
-      <div class="story1" id="storyText">&gt;Story</div>
+      <div class="dashboard1" id="dashBoardText"><a style="color: black;" href="{{url_for('dashboard')}}">&gt;Dashboard</a></div>
+      <div class="story1" id="storyText"><a style="color: black;" href="{{url_for('story')}}">&gt;Story</a></div>
       <img class="front-image-icon" alt=""  src="{{ url_for('static', filename='images/10178.gif') }}">
       
 

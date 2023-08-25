@@ -24,11 +24,11 @@
 				<p class="agro-data-con">AGRO DATA</p>
 				<p class="agro-data-con">DYNASTY</p>
 			  </div>
-    		<div class="home" id="hOMEText">HOME</div>
-    		<div class="about" id="aBOUTText">ABOUT</div>
-    		<div class="dashboard" id="dASHBOARDText">DASHBOARD</div>
+    		<div class="home" id="hOMEText"><a style="color: black;" href="{{ url_for('index')}}">HOME</a></div>
+    		<div class="about" id="aBOUTText"><a style="color: black;" href="{{ url_for('about')}}">ABOUT</a></div>
+    		<div class="dashboard" id="dASHBOARDText"><a style="color: black;" href="{{url_for('dashboard')}}">DASHBOARD</a></div>
     		<div class="story">STORY-REPORT</div>
-    		<div class="contact" id="cONTACTText">CONTACT</div>
+    		<div class="contact" id="cONTACTText"><a style="color: black;" href="{{url_for('contact')}}">CONTACT</a></div>
     		
     		<img class="storygif-icon" alt="" src="{{ url_for('static', filename='images/story.gif') }}">
     		

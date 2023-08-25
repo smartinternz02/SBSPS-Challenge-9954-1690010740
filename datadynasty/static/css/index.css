@@ -92,6 +92,7 @@
 .contact {
   left: 1200px;
   width: 95px;
+  text-decoration: none;
 }
 .get-started2:hover {
   color: rgb(255, 255, 255);
