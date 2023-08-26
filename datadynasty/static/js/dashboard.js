@@ -21,28 +21,28 @@ if(explorationTopText) {
 var hOMEText = document.getElementById("hOMEText");
 if(hOMEText) {
     hOMEText.addEventListener("click", function (e) {
-        // Add your code here
+      
     });
 }
 
 var aBOUTText = document.getElementById("aBOUTText");
 if(aBOUTText) {
     aBOUTText.addEventListener("click", function (e) {
-        // Add your code here
+     
     });
 }
 
 var sTORYText = document.getElementById("sTORYText");
 if(sTORYText) {
     sTORYText.addEventListener("click", function (e) {
-        // Add your code here
+       
     });
 }
 
 var cONTACTText = document.getElementById("cONTACTText");
 if(cONTACTText) {
     cONTACTText.addEventListener("click", function (e) {
-        // Add your code here
+    
     });
 }
 

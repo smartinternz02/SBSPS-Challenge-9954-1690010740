@@ -2,28 +2,28 @@
     		var hOMEText = document.getElementById("hOMEText");
     		if(hOMEText) {
       			hOMEText.addEventListener("click", function (e) {
-        				// Add your code here
+        				
       			});
     		}
     		
     		var aBOUTText = document.getElementById("aBOUTText");
     		if(aBOUTText) {
       			aBOUTText.addEventListener("click", function (e) {
-        				// Add your code here
+        				
       			});
     		}
     		
     		var dASHBOARDText = document.getElementById("dASHBOARDText");
     		if(dASHBOARDText) {
       			dASHBOARDText.addEventListener("click", function (e) {
-        				// Add your code here
+        				
       			});
     		}
     		
     		var cONTACTText = document.getElementById("cONTACTText");
     		if(cONTACTText) {
       			cONTACTText.addEventListener("click", function (e) {
-        				// Add your code here
+        				
       			});
     		}
     		
